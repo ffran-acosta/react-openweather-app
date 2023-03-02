@@ -1,4 +1,4 @@
-import { API_KEY, BASE_URL } from "../utilities/url"
+import { API_KEY, BASE_URL } from "../utilities"
 
 export const getWeatherData = async (info, searchParams) => {
     const url = new URL(BASE_URL + info)

@@ -1,2 +1,2 @@
-export * from './Format-Data/formatWeatherData';
+export * from './Format-Data';
 export * from './url';
