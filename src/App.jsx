@@ -1,6 +1,6 @@
 import './App.css'
 import React from 'react';
-import { Inputs, TimeLocation, TopButtons, WeatherInfo } from './components';
+import { CurrentWeatherInfo, Forecast, Inputs, TimeLocation, TopButtons } from './components';
 
 
 function App() {
@@ -10,7 +10,9 @@ function App() {
       <TopButtons/>
       <Inputs/>
       <TimeLocation/>
-      <WeatherInfo/>
+      <CurrentWeatherInfo/>
+      <Forecast title="hourly forecast"/>
+      <Forecast title="weak forecast" />
     </div>
   )
 }
