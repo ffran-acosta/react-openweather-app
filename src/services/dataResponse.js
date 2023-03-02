@@ -1,7 +1,7 @@
 import { forecastData, weatherData } from "./data"
 
-export const dataResponse = async () => {
-    const weather = await weatherData({ q: 'london' })
-    const forecast = await forecastData()
+export const dataResponse = async (searchParams) => {
+    const weather = await weatherData(searchParams)
+    const forecast = await forecastData(searchParams)
     return { ...weather, ...forecast }
 }

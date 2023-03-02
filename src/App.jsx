@@ -5,7 +5,7 @@ import { dataResponse } from './services';
 
 function App() {
 
-  const [query, setQuery] = useState({ q: 'london' })
+  const [query, setQuery] = useState({ q: 'pergamino' })
   const [units, setUnits] = useState('metric')
   const [weather, setWeather] = useState(null)
 
@@ -19,8 +19,8 @@ function App() {
 
   return (
     <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400">
-      <TopButtons/>
-      <Inputs/>
+      <TopButtons setQuery={setQuery} />
+      <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
 
       {weather && (
         <div>
