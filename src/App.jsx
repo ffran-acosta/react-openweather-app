@@ -1,14 +1,14 @@
 import './App.css'
 import React from 'react';
 import { CurrentWeatherInfo, Forecast, Inputs, TimeLocation, TopButtons } from './components';
-import { getWeatherData } from './services';
+import { weatherData } from './services';
 
 
 function App() {
 
   const fetchWeather = async () => {
-    const data = await getWeatherData('weather', {q: 'london'})
-    console.log(data);
+    console.log(await weatherData({ q: 'london' }));
+    return weatherData({ q: 'london' })
   }
   fetchWeather()
   return (
