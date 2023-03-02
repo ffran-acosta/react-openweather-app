@@ -1,4 +1,4 @@
 export * from './api';
-export * from './url';
+export * from './utilities/url';
 export * from './utilities';
-export * from './weather.api';
+export * from './weatherData';
